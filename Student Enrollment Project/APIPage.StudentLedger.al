@@ -43,6 +43,11 @@ page 50114 "Student Ledger API"
 
             }
 
+            field(Status; Rec.Status)
+            {
+
+            }
+
         }
     }
 }
