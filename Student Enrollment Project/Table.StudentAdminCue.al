@@ -4,59 +4,19 @@ table 50106 "Student Admin Cue"
 
     fields
     {
-        field(1; "No. of Students"; Integer)
-        {
-            DataClassification = ToBeClassified;
-        }
-        field(2; "Pending Enrollments"; Integer)
-        {
-            DataClassification = ToBeClassified;
-        }
-        field(3; "Fees Due"; Integer)
-        {
-            DataClassification = ToBeClassified;
-        }
-        field(4; "Payments Today"; Integer)
-        {
-            DataClassification = ToBeClassified;
-        }
+        field(1; "Primary Key"; Code[10]) { }
+        field(2; "No. of Students"; Integer) { }
+        field(3; "Pending Enrollments"; Integer) { }
+        field(4; "Fees Due"; Integer) { }
+        field(5; "Payments Today"; Integer) { }
+        field(6; "No. of Courses"; Integer) { }
     }
 
     keys
     {
-        key(PK; "No. of Students")
+        key(PK; "Primary Key")
         {
             Clustered = true;
         }
     }
-
-    fieldgroups
-    {
-        // Add changes to field groups here
-    }
-
-    var
-        myInt: Integer;
-
-
-    trigger OnInsert()
-    begin
-
-    end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
-
 }
